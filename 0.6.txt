@@ -1,0 +1,14 @@
+note over Browser:
+User writes something into the text
+field and clicks the submit button
+end note
+
+note over Browser:
+The browser executes the event handler
+that creates a `note` object, adds it to
+the `notes` array, redraws the list, and
+sends a request to the server
+end note
+
+Browser->Server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+Server-->Browser: HTTP status code 201
